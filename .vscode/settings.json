@@ -1,0 +1,6 @@
+{
+    "editor.fastScrollSensitivity": 1,
+    "editor.scrollbar.verticalScrollbarSize": 5,
+    "workbench.list.fastScrollSensitivity": 2,
+    "terminal.integrated.scrollback": 1000
+}

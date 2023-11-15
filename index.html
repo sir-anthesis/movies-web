@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/favicon.png" type="image/x-icon" />
+  <title>Movie</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.7.0/hint.min.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="/Project1/index.html" class="logo">
+      <img src="assets/logo.png" alt="logo website" />
+    </a>
+
+    <nav class="navbar">
+      <a class="active" href="#home">home</a>
+      <a href="#movies">movies</a>
+      <a href="#tranding">coming up</a>
+      <!-- <a href="#footer">about</a> -->
+    </nav>
+
+    <div class="icons">
+      <form action="" class="search-bar">
+        <input type="text" placeholder="search here" name="q" />
+        <button type="submit">
+          <i id="search-icon" class="fas fa-search"></i>
+        </button>
+      </form>
+      <i class="fas fa-bars" id="menu-bars"></i>
+    </div>
+  </header>
+
+  <!-- header section end -->
+
+  <!-- search form start -->
+
+  <form action="" id="search-form">
+    <input type="search" placeholder="search here.." name="" id="search-box" />
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
+
+  <!-- search form end -->
+
+  <!-- home section start -->
+
+  <section class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper home-wrapper">
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>marvel studio</span>
+            <h3>ant man</h3>
+            <p>
+              With a costume suit with the extraordinary ability to reduce
+              himself to an extreme scale and increase his strength, Scott,
+              who was once a master thief, has now turned into a superhero.
+            </p>
+          </div>
+          <div class="image">
+            <img src="assets/ant man1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>original netflix series</span>
+            <h3>money heist</h3>
+            <p>
+              Tells about a group of bank robbers led by someone named
+              "Professor". He had planned this heist with great care and was
+              impressed to see how everything was so neatly arranged.
+            </p>
+          </div>
+          <div class="image">
+            <img src="assets/money heist1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>summit entertainment</span>
+            <h3>jhon wick</h3>
+            <p>
+              John Wick, a former assassin, mourns the death of his wife.
+              However, he is forced to return to the underworld after a group
+              of Russian gangsters steals a car and kills his wife's inherited
+              puppy.
+            </p>
+          </div>
+          <div class="image">
+            <img src="assets/jhon wick1.webp" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="home-swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- home section end -->
+
+  <!-- movies section start -->
+
+  <section class="movies" id="movies">
+    <div class="title">
+      <h2 class="sub-heading">LET'S FUN WITH OUR</h2>
+      <h1 class="heading">Movies!</h1>
+    </div>
+    <div class="wrapper">
+      <div class="card" onclick="openAvgHtml3()">
+        <div class="poster">
+          <img src="assets/jurassic world.jpg" alt="Location Unknown" />
+        </div>
+        <div class="details">
+          <h1>Jurassic World</h1>
+          <h2>2021 • R • 1hr 124min</h2>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.7/5</span>
+          </div>
+          <div class="tags">
+            <span class="tag yellow">Adventure</span>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag blue">Action</span>
+          </div>
+          <p class="desc">
+            A safari park containing genetically engineered dinosaurs is in an
+            uproar when one of the dinosaurs escapes from its cage. An animal
+            expert and ex-military tries to save everyone.
+          </p>
+          <div class="cast">
+            <h3>Cast</h3>
+            <ul>
+              <li>
+                <img src="assets/p1.jpg" alt="Jessica Enduro" title="Jessica Enduro" />
+              </li>
+              <li>
+                <img src="assets/p2.jpg" alt="Charles Garcia" title="Charles Garcia" />
+              </li>
+              <li>
+                <img src="assets/p4.jpg" alt="Charles Garcia" title="Charles Garcia" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="openAvgHtml1()">
+        <div class="poster">
+          <img src="assets/endgame.jpg" alt="Location Unknown" />
+        </div>
+        <div class="details">
+          <h1>Avengers</h1>
+          <h2>2019 • PG • 1hr 181min</h2>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>4.2/5</span>
+          </div>
+          <div class="tags">
+            <span class="tag">America</span>
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Superhero</span>
+          </div>
+          <p class="desc">
+            Continuing Avengers Infinity War, where events occur after Thanos
+            manages to get all the infinity stones and destroys 50% of all
+            living things in the universe. Will the Avengers succeed in
+            defeating Thanos?
+          </p>
+          <div class="cast">
+            <h3>Cast</h3>
+            <ul>
+              <li>
+                <img src="assets/a1.jpg" alt="Robert Downey jr" title="Robert Downey jr" />
+              </li>
+              <li>
+                <img src="assets/a2.jpg" alt="Chris Evans" title="Chris Evans" />
+              </li>
+              <li>
+                <img src="assets/a6.jpg" alt="Brie Larson" title="Brie Larson" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card" onclick="openAvgHtml2()">
+        <div class="poster">
+          <img src="assets/eternals.jpg" alt="Location Unknown" />
+        </div>
+        <div class="details">
+          <h1>Eternals</h1>
+          <h2>2021 • PG • 24min</h2>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>4/5</span>
+          </div>
+          <div class="tags">
+            <span class="tag">Sci-Fi</span>
+            <span class="tag">Superhero</span>
+            <span class="tag">Fight</span>
+          </div>
+          <p class="desc">
+            Marvel Studios' "Eternals" presents the story of a group of heroes
+            from outer space who have protected Earth since the dawn of human
+            civilization.
+          </p>
+          <div class="cast">
+            <h3>Cast</h3>
+            <ul>
+              <li>
+                <img src="assets/e1.jpg" alt="Angelina Whyte" title="Angelina Whyte" />
+              </li>
+              <li>
+                <img src="assets/e2.webp" alt="Ivan Benson" title="Ivan Benson" />
+              </li>
+              <li>
+                <img src="assets/e3.jpg" alt="Ivan Benson" title="Ivan Benson" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- movies section end -->
+
+  <!-- section coming up start -->
+
+  <section id="tranding">
+    <div class="title">
+      <h2 class="sub-heading">TO BE AIR ON 2024</h2>
+      <h1 class="heading">Coming Up</h1>
+    </div>
+    <div class="container">
+      <div class="swiper tranding-slider">
+        <div class="swiper-wrapper">
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/ant man.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/thor love of thunder.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/Jhon Wick.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/spiderman.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/moon knight.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/money heist.jpg" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+          <!-- Slide-start -->
+          <div class="swiper-slide tranding-slide">
+            <div class="tranding-slide-img">
+              <img src="assets/uncharted.webp" alt="Tranding" />
+            </div>
+          </div>
+          <!-- Slide-end -->
+        </div>
+
+        <!-- <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- section coming up end -->
+
+  <!-- footer section start -->
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>location</h3>
+        <a href="#">indonesia</a>
+        <a href="#">aussie</a>
+        <a href="#">japan</a>
+        <a href="#">united state</a>
+        <a href="#">korea</a>
+        <a href="#">italy</a>
+      </div>
+
+      <div class="box">
+        <h3>contact us</h3>
+        <a href="#">+62 221-9289-1140</a>
+        <a href="#">+62 221-9388-1945</a>
+        <a href="#">arcanistmaster776@gmail.com</a>
+        <a href="#">jakarta, indonesia - 16451</a>
+      </div>
+
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="#">facebook</a>
+        <a href="#">instagram</a>
+        <a href="#">twitter</a>
+        <a href="#">linkedin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section end -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
